@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 全局作用域：当你开开一个页面，就会全局作用域，就有一个全局的大对象window，（window.可以省略）
+        全局变量（var、let、const、function）
+        区别
+        1、var他会给全局作用域定义一个变量，给window增加属性，let不会
+        2、var有变量提升，let没有
+        3、var可以重复声明同一个变量，let不行
+        
+        
+        */
+    //    var a = 12; // 他会给全局作用域定义一个变量，给window增加属性
+    //    var a = 13;
+    //    let  b = 12;
+
+    /* 
+    
+    私有作用域：只要函数执行就会生成私有作用域
+    */
+
+
+   function fn(){
+    /* 定义函数：
+    1、开辟一个堆内存，形成16进制空间地址
+    2、那函数里的代码以字符串的格式放进堆内存
+    3、把地址赋值给函数名
+    
+    */
+   }
+
+   fn()
+   /* 
+   函数执行：
+   1、开辟私有作用域
+   2、形参赋值
+   3、变量提升
+   4、代码执行
+   5、作用域是否销毁
+   */
+
+   /* 
+   
+   私有变量：在私有作用域里生成的变量就是私有变量(let、var、function)
+   形参也会是私有变量
+   */
+
+
+//    变量提升：
+//    变量提升就是浏览器解析js代码的一个过程，发生在js代码运行之前，
+//    在当前作用域浏览器会从头到尾检测一遍所有的变量，给带var和function的变量进行提前的声明和定义，var只声明不定义，function既声明又定义
+
+
+
+
+
+
+    </script>
+</body>
+</html>
